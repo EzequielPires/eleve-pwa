@@ -1,0 +1,41 @@
+{
+  "name": "Igreja Comunidade",
+  "short_name": "Igreja",
+  "description": "Aplicativo da Igreja Comunidade - Cultos, Eventos, Sermões e mais",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2d3748",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192x192.jpg",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.jpg",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["lifestyle", "social"],
+  "shortcuts": [
+    {
+      "name": "Horários",
+      "short_name": "Horários",
+      "description": "Ver horários dos cultos",
+      "url": "/#horarios",
+      "icons": [{ "src": "/icon-192x192.jpg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Eventos",
+      "short_name": "Eventos",
+      "description": "Próximos eventos",
+      "url": "/#eventos",
+      "icons": [{ "src": "/icon-192x192.jpg", "sizes": "192x192" }]
+    }
+  ]
+}

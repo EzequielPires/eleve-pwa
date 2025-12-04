@@ -3,7 +3,6 @@ import "./globals.css";
 export const metadata = {
   title: "Eleve Church",
   description: "Aplicativo da Eleve Church",
-  themeColor: "#4A3AFF",
   icons: {
     icon: "/app-icons/icon.png",
     apple: "/app-icons/icon.png",
