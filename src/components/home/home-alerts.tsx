@@ -4,15 +4,10 @@ import { Card, CardDescription, CardHeader, CardTitle } from "../ui/card";
 import { Calendar } from "lucide-react";
 import { Skeleton } from "../ui/skeleton";
 import { Alert } from "@/lib/models/alert";
+import { AlertService } from "@/lib/services/alert.service";
 
 export async function HomeAlerts() {
-    const {data}: {data: Alert[]} = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}alerts`, {
-        headers: {
-          'Authorization': `Bearer ${process.env.NEXT_PUBLIC_ACCESS_TOKEN}`
-        }
-      }).then(async res => await res.json());
-
-      console.log(data)
+    const data = await AlertService.getAll();
 
     return (
         <div className="flex flex-col gap-4 pt-4">

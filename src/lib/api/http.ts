@@ -10,8 +10,10 @@ export async function http<T>(
       'Authorization': `Bearer ${process.env.NEXT_PUBLIC_ACCESS_TOKEN}`,
       ...(options.headers || {})
     },
-    cache: "no-store",
     ...options,
+    next: {
+      revalidate: 30
+    }
   });
 
   if (!res.ok) {
