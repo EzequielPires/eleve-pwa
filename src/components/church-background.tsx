@@ -21,7 +21,9 @@ export function ChurchBackground() {
                 />
             </AspectRatio>
             <div className="absolute z-50 top-0 left-0 right-0 p-4 flex items-center gap-8">
-                <button className="text-white" onClick={() => router.back()}><ArrowLeft size={28} /></button>
+                <Button size={'icon-lg'} variant={"outline"} onClick={() => router.back()}>
+                    <ArrowLeft />
+                </Button>
                 <h1 className="text-lg font-semibold text-white">Comunidade Evangélica Vinde</h1>
             </div>
             <div className="w-full h-full bg-black/50 absolute z-10 top-0 left-0 right-0 border-0"></div>

@@ -2,11 +2,13 @@
 
 import Image from "next/image";
 import { AspectRatio } from "./ui/aspect-ratio";
-import { ArrowLeft, ArrowRight, CalendarDaysIcon } from "lucide-react";
+import { ArrowLeft, ArrowRight, CalendarDays, CalendarDaysIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { Button } from "./ui/button";
+import Link from "next/link";
+import { Ministry } from "@/lib/models/ministry";
 
-export function PublicationBackground() {
+export function MinistryBackground({ministry}: {ministry: Ministry}) {
     const router = useRouter()
 
     return (
@@ -23,7 +25,7 @@ export function PublicationBackground() {
                 <Button size={'icon-lg'} variant={"outline"} onClick={() => router.back()}>
                     <ArrowLeft />
                 </Button>
-                <h1 className="text-lg font-semibold text-white">Publicações</h1>
+                <h1 className="text-lg font-semibold text-white">{ministry.name}</h1>
             </div>
             <div className="w-full h-full bg-black/50 absolute z-10 top-0 left-0 right-0 border-0"></div>
             <div className="w-full bg-white absolute left-0 right-0 border-0 bottom-0 h-8 rounded-t-2xl z-50"></div>

@@ -58,10 +58,10 @@ export function FormInput({
           <FormControl>
             <div className="relative">
               <Input
-                ref={inputRef}
                 placeholder={placeholder ?? "Insira um valor"}
                 {...props}
                 {...field}
+                ref={inputRef}
                 type={isPassword ? (showPassword ? "text" : "password") : type}
                 value={applyMask(field.value ?? "")}
                 onChange={(e) => field.onChange(applyMask(e.target.value))}

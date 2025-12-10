@@ -4,8 +4,8 @@ export const metadata = {
   title: "Eleve Church",
   description: "Aplicativo da Eleve Church",
   icons: {
-    icon: "/app-icons/icon.png",
-    apple: "/app-icons/icon.png",
+    icon: "/app-icons/icon-192x192.png",
+    apple: "/app-icons/icon-192x192.png",
   },
   appleWebApp: {
     capable: true,
